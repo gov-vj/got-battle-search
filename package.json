@@ -21,7 +21,7 @@
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
     "build": "react-scripts build && mv build server",
-    "heroku-postbuild": "npm run build"
-  },
-  "proxy": "http://localhost:3001"
+    "heroku-postbuild": "npm run build",
+    "serverstart": "nodemon server/server.js"
+  }
 }
