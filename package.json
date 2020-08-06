@@ -19,7 +19,9 @@
     "react-scripts": "^1.0.10"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\""
+    "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
+    "build": "react-scripts build && mv build server",
+    "heroku-postbuild": "npm run build"
   },
   "proxy": "http://localhost:3001"
 }
